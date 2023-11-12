@@ -1,0 +1,352 @@
+:root{
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+    --box-shadow:.3rem .3rem 0 rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --border:.2rem solid var(--green);
+}
+*{
+    border: 0;
+    margin:0;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-color: #f5f5f5;
+}
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5%;
+    font-size: 1.5rem;
+    box-shadow: .6rem .6rem .8rem rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+nav > .logo{
+    display: flex;
+    gap: .5rem;
+}
+nav > .logo > p > span{
+    color: var(--green);
+}
+nav > .logo > i{
+    color: var(--green);
+}
+nav > .nav{
+    display: flex;
+    gap: 1.5rem;
+}
+.nav > a{
+    text-decoration: none;
+    color: var(--light-color)
+}
+.nav > a:hover{
+    color: var(--green);
+    transition: .3s ease-out;
+}
+.home-page{
+    height: 88vh;
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 5%;
+    margin-top: 5rem;
+}
+.home-page > img{
+    width: 50%;
+}
+.home-page > div > h1{
+    font-size: 3rem;
+    padding-bottom: 1.3rem;
+    color: var(--black);
+    position:relative;
+    left:-1%;
+}
+.home-page > div > p{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: var(--light-color);
+}
+.btn{
+    padding: .6rem 1rem;
+    padding-top: .8rem;
+    border-radius: .5rem;
+    font-size:1.3rem;
+    text-decoration: none;
+    color: var(--green);
+    box-shadow: var(--box-shadow);
+    border: solid var(--green);
+    display: inline-block;
+}
+.btn > i{
+    margin-left:1rem;
+    background-color: var(--green);
+    color: white;
+    border-radius: .3rem;
+    font-size: 1.5rem;
+    padding: .3rem .3rem;
+}
+.btn:hover{
+    background-color: var(--green);
+    color:white;
+    transition: .2s ease-in-out;
+}
+.btn:hover i{
+    background-color: white;
+    color: var(--green);
+}
+.features{
+    margin-left: 1px;
+    display:flex;
+    gap: 2%;
+    justify-content: center;
+    background-color: white;
+}
+.features > div {
+    border: solid;
+    width:20%;   
+    text-align: center;
+    border: solid var(--green);
+    box-shadow: var(--box-shadow);
+    margin-top: 3rem;
+    margin-bottom:3rem;
+    background-color: white;
+    border-radius:1rem;
+}
+.features > div > i{
+    color: var(--green);
+    font-size: 2rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+}
+.features > div > h1{
+    color: var(--black);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.features > div > p{
+    color: var(--light-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.services{
+    display: flex;
+    margin-left:1px;
+    justify-content: start;
+    gap:4%;
+    flex-wrap: wrap;
+    padding-left: 7%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+   
+}
+.services > div{
+    width: 20%;
+    border: solid var(--green);
+    border-radius: 1rem;
+    text-align: center;
+    box-sizing: content-box;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+
+}
+.services > div > i{
+    color: var(--green);
+    margin-top:1rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.services > div > h2{
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+.services > div > p{
+    font-size: 1.2rem;
+    color: var(--light-color);
+    margin-bottom: 1rem;
+}
+.services > div> .btn{
+    margin-bottom: 1rem;
+    padding: .3rem 1.5rem;
+    padding-right: .2rem;
+    transition: 0s ease-in-out;
+    position:relative;
+    left:-3rem;
+    border:2px solid var(--green);
+}
+.about{
+    text-align: center;
+    background-color: white;
+    padding-top: 2rem;
+}
+.about > h1{
+    font-size: 4rem;
+    color: var(--black);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.about > h1 > span{
+    color: var(--green);
+}
+.about-us{
+    display: flex;
+    align-items: center; 
+    gap: 4rem;
+    margin-left: 1px;
+    padding-right:5%;
+    padding-left: 5%;
+}
+.about-us > img{
+    width: 45%;
+    margin-left:3rem;
+}
+.about-us > div{
+    text-align: start;
+}
+.about-us > div > h2{
+    font-size: 3rem;
+    position:relative;
+    left: -3px;
+    color: var(--black);
+    margin-bottom: 2rem;
+}
+.about-us p{
+    font-size: 1.1rem;
+    color: var(--light-color);
+    margin-bottom: 2rem;
+    line-height: 1.7rem;
+}
+.doctors{
+    text-align: center;
+}
+.doctors h1{
+    margin-top: 3rem;
+    font-size: 5rem;
+    color: var(--black);
+    margin-bottom: 3rem;
+}
+.doctors span{
+    color: var(--green);
+
+}
+.doctors img{
+    width: 50%;
+    border: solid var(--green);
+    border-radius: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.about-doctors{
+    display: flex;
+    justify-content: start;
+    flex-wrap:wrap;
+    gap: 2%;
+    padding-left:7%;
+}
+.about-doctors > div{
+    border: solid var(--green);
+    border-radius: .3rem;
+    width:30%;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+}
+.about-doctors h2{
+    font-size: 2rem;
+    margin-bottom: .2rem;
+    color: var(--black);
+}
+.about-doctors p{
+    font-size: 1.2rem;
+    color: var(--green);
+    margin-bottom: 1rem;
+}
+.about-doctors .icons{
+    display:flex;
+    justify-content: center;
+    gap: 4%;
+    margin-bottom: 1rem;
+}
+.about-doctors .icons i{
+    font-size:1.3rem;
+    color:var(--green);
+    border: solid;
+    padding:.8rem .8rem;
+    border-radius: .5rem;
+}
+.appointment{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    background-color: white;
+}
+.appointment > h1{
+    color: var(--black);
+    font-size: 4rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+.appointment > h1 > span{
+    color:var(--green);
+}
+.about-appointment{
+    text-align: center;
+    width:100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    gap: 5%;    
+}
+.about-appointment > img{
+    width: 40%; 
+}
+.appointment form{
+    width: 40%;
+    padding-left:2%;
+    padding-top: 2.2rem;
+    height: 63vh;
+    border: solid var(--green);
+    border-radius: .7rem; 
+}
+.appointment form > h1{
+    color: var(--black);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.appointment form > input{
+    display: block;
+    border: solid var(--green);
+    font-size:1.5rem;
+    width: 30rem;    
+    border: 2px solid var(--green);
+    border-radius:.2rem;
+    padding:.2rem .2rem;
+    margin-bottom: 2rem;
+}
+.appointment form > a{
+    border: 2px solid var(--green);
+    border-radius: .2rem;
+    padding: .7rem .7rem;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: var(--green);
+    font-size: 1.3rem;
+}
+.appointment form > a:hover{
+    background-color: var(--green);
+    color: white;
+    border: 5px solid white;
+    border-radius: 1rem;;
+}
